@@ -1,5 +1,5 @@
 #!/bin/sh
-#to run it - chmod 744 ./fresh-installation.sh
+#to run it - chmod 755 ./fresh-installation.sh
 # simply call ./fresh-installation.sh
 # some nerd font should be installed before.
 # https://www.nerdfonts.com/
@@ -8,7 +8,7 @@
 sudo apt-get update
 sudo apt-get upgrade -y
 
-# 2. install node ? + npm
+# 2. install node + npm
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
@@ -55,3 +55,5 @@ sudo apt-get install ./exa_0.9.0-4_amd64.deb
 # 9. copy configurations
 cp ./configurations/.zshrc ~/
 cp ./configurations/.p10k.zsh ~/
+cp ./configurations/starship.toml ~/.config/
+cp .gitconfig ~/
