@@ -56,4 +56,4 @@ sudo apt-get install ./exa_0.9.0-4_amd64.deb
 cp ./configurations/.zshrc ~/
 cp ./configurations/.p10k.zsh ~/
 cp ./configurations/starship.toml ~/.config/
-cp .gitconfig ~/
+cp ../gitconfig ~/
